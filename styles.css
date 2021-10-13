@@ -1,0 +1,112 @@
+:root {
+  --primary: #00ff84;
+  --dark: #0d0e0e;
+  --serif: "EB Garamond", serif;
+  --sans-serif: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--dark);
+  font-family: var(--sans-serif);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--serif);
+}
+
+.color-strive {
+  color: var(--primary);
+}
+
+.btn-strive {
+  background-color: var(--primary);
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.main-section {
+  background-image: url("./assets/smile.jpg");
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.25;
+  background-color: black;
+  z-index: 0;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark {
+  padding-top: 4rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.hero {
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.hero strong {
+  font-weight: 700;
+}
+
+.hero h1 {
+  font-size: 61px;
+  line-height: 1;
+}
+
+.hero .btn-strive {
+  font-size: 1.2rem;
+  padding: 1rem 4rem;
+}
+
+.about-us {
+  background-color: #0000009c;
+  color: white;
+
+  padding: 3rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.about-us h3 {
+  font-family: var(--sans-serif);
+  font-weight: 700;
+}
+/* .about-us h3 span {
+  color: var(--primary);
+} */
+
+.alert-strive {
+  background-color: var(--primary);
+  text-align: center;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.alert-strive a {
+  color: var(--dark);
+  font-weight: 700;
+}
+
+footer {
+  min-height: 200vh;
+}
